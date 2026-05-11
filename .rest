@@ -1,0 +1,20 @@
+GET http://localhost:8080/ 
+
+###
+
+GET https://cse341-project1-pl8u.onrender.com/
+
+###
+
+GET https://cse341-project1-pl8u.onrender.com/contacts
+
+###
+
+GET https://cse341-project1-pl8u.onrender.com/contacts/6a0141dbc0103064c318f22d
+
+
+###
+GET https://cse341-project1-pl8u.onrender.com/contacts/6a0141dbc0103064c318f22c
+
+###
+GET https://cse341-project1-pl8u.onrender.com/contacts/6a0141dbc0103064c318f22e
