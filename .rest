@@ -49,7 +49,7 @@ content-type: application/json
 
 ### DELETE contact LOCAL
 
-DELETE http://localhost:8080/contacts/6a06aac45de4b68d39b615d8 
+DELETE http://localhost:8080/contacts/6a06c0b0c88545307799de4a 
 
 
 ### CREATE contact PUBLIC
