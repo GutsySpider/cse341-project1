@@ -1,14 +1,14 @@
 GET http://localhost:8080/ 
 
-###
+### GET homepage public
 
 GET https://cse341-project1-pl8u.onrender.com/
 
-###
+### GET all contacts public
 
 GET https://cse341-project1-pl8u.onrender.com/contacts
 
-###
+### GET one contact public
 
 GET https://cse341-project1-pl8u.onrender.com/contacts/6a0141dbc0103064c318f22d
 
@@ -18,3 +18,65 @@ GET https://cse341-project1-pl8u.onrender.com/contacts/6a0141dbc0103064c318f22c
 
 ###
 GET https://cse341-project1-pl8u.onrender.com/contacts/6a0141dbc0103064c318f22e
+
+### Create one contact LOCAL
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "test",
+    "lastName": "local",
+    "email": "test@gmail.com",
+    "favoriteColor": "white",
+    "birthday": "5/14/26"
+}
+
+### GET all LOCAL
+GET http://localHost:8080/contacts
+
+### Update Contact LOCAL
+
+PUT http://localhost:8080/contacts/6a06aac45de4b68d39b615d8 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Mike",
+    "lastName": "Fletcher",
+    "email": "put@gmail.com",
+    "favoriteColor": "yellow",
+    "birthday": "4/8/14"
+}
+
+### DELETE contact LOCAL
+
+DELETE http://localhost:8080/contacts/6a06aac45de4b68d39b615d8 
+
+
+### CREATE contact PUBLIC
+POST https://cse341-project1-pl8u.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "test",
+    "lastName": "local",
+    "email": "test@gmail.com",
+    "favoriteColor": "white",
+    "birthday": "5/14/26"
+}
+
+### Update contact PUBLIC
+
+PUT https://cse341-project1-pl8u.onrender.com/contacts/6a06a58c3a5717f237b00fcb HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Mike",
+    "lastName": "Fletcher",
+    "email": "put@gmail.com",
+    "favoriteColor": "yellow",
+    "birthday": "4/8/14"
+}
+
+### DELETE conatct PUBLIC
+
+DELETE https://cse341-project1-pl8u.onrender.com/contacts/6a06a58c3a5717f237b00fcb 
