@@ -1,4 +1,4 @@
-GET http://localhost:8080/ 
+GET http://localhost:8080/
 
 ### GET homepage public
 
@@ -10,7 +10,7 @@ GET https://cse341-project1-pl8u.onrender.com/contacts
 
 ### GET one contact public
 
-GET https://cse341-project1-pl8u.onrender.com/contacts/6a0141dbc0103064c318f22d
+GET https://cse341-project1-pl8u.onrender.com/contacts/6a0141dbc0103064c318f22c
 
 
 ###
@@ -32,7 +32,7 @@ content-type: application/json
 }
 
 ### GET all LOCAL
-GET http://localHost:8080/contacts
+GET http://localHost:8080/contacts/6a0141dbc0103064c318f22c
 
 ### Update Contact LOCAL
 
@@ -66,7 +66,7 @@ content-type: application/json
 
 ### Update contact PUBLIC
 
-PUT https://cse341-project1-pl8u.onrender.com/contacts/6a06a58c3a5717f237b00fcb HTTP/1.1
+PUT https://cse341-project1-pl8u.onrender.com/contacts/6a06c672adf036ed51e6fe15 HTTP/1.1
 content-type: application/json
 
 {
